@@ -1,5 +1,7 @@
 import { useState } from "react";
 import ProductDetails from "./ProductDetails";
+import './style.css'
+//basic styling methind
 
 function Products(){
 
@@ -27,7 +29,7 @@ fetchListOfProducts();
     return(
         <>
         <h1>List Of Products</h1>
-        <ul>
+        <ul className="displayformat">
         {finalList.map((item,id)=>(
             <>
             <li key={item.id} onClick={()=>{setVisible(!visible);setSelectedId(item.id)}}>{item.title}</li>

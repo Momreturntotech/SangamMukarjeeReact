@@ -1,0 +1,15 @@
+.displayformat {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+
+.displayformat li {
+  background: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
