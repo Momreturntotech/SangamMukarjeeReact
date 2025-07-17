@@ -13,13 +13,10 @@ function App() {
 
   return (
     <>
-    <ClassBasedComponent/>
- {/* <Products/> 
- 
+   {/*  <ClassBasedComponent/>
   <ConditionalRender/>
- 
- 
  */} 
+ <Products/> 
 
     </>
   )

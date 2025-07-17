@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductDetails from "./ProductDetails";
 import './style.css'
 //basic styling methind
@@ -8,6 +8,7 @@ function Products(){
 const [finalList,setFinalList]=useState([])
 const [visible,setVisible]=useState(false)
 const [selectedId,setSelectedId]=useState(0)
+const [count,setCount]=useState(0)
 
 const fetchListOfProducts=async()=>{
     try {
@@ -20,7 +21,14 @@ const fetchListOfProducts=async()=>{
         
     }
 }
-fetchListOfProducts();
+
+
+useEffect(()=>{
+    
+    console.log("Executed during the useEffect on the first page upload ")
+    
+    fetchListOfProducts();},[count])
+
 
 
 
@@ -38,6 +46,8 @@ fetchListOfProducts();
 
         ))}
         </ul>
+        <button onClick={()=>setCount(count+1)}>Click Me To Increment the Count</button>
+        <button>{count}</button>
 
     
         
