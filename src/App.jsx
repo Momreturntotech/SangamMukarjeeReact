@@ -7,16 +7,20 @@ import FunctionalComponent from './components/functional-component'
 import ProductList from './components/products'
 import Products from './components/products/Products'
 import ConditionalRender from './components/ConditionalRender'
+import Users from './components/Users/Users'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
    {/*  <ClassBasedComponent/>
   <ConditionalRender/>
+   <Products/> 
  */} 
- <Products/> 
+ <Users/>
+
 
     </>
   )

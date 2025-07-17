@@ -26,8 +26,16 @@ const fetchListOfProducts=async()=>{
 useEffect(()=>{
     
     console.log("Executed during the useEffect on the first page upload ")
+    fetchListOfProducts()
+
+    return()=>{
+        console.log("Component is unmounted -> some side effects here also ")
+
+    }
     
-    fetchListOfProducts();},[count])
+    },[count])
+
+
 
 
 
