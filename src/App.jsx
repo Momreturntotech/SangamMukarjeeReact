@@ -8,6 +8,9 @@ import ProductList from './components/products'
 import Products from './components/products/Products'
 import ConditionalRender from './components/ConditionalRender'
 import Users from './components/Users/Users'
+import DisplayContext from './context/DisplayContext'
+import UseReducerExample from './components/Reducer/useReducerExample'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,8 +21,12 @@ function App() {
    {/*  <ClassBasedComponent/>
   <ConditionalRender/>
    <Products/> 
+    <Users/>
+     <DisplayContext/>
  */} 
- <Users/>
+<UseReducerExample/>
+
+
 
 
     </>
